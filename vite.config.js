@@ -10,6 +10,7 @@ import imagemin from './vite/imagemin.js';
 import twig from './vite/twig.js';
 import vituum from './vite/vituum.js';
 import generateFolders from './vite/generate-folders.js';
+import copyImages from './vite/copy-images.js';
 
 const plugins = [
   vituum(),
@@ -18,6 +19,7 @@ const plugins = [
 
 if (isProd) {
   plugins.push(imagemin());
+  plugins.push(copyImages());
   plugins.push(htmlmin());
   plugins.push(htmlTransformBase());
   plugins.push(generateFolders());

@@ -53,6 +53,28 @@ function generateFolders() {
               return `${attr}=${quote}${newUrl}${quote}`;
             }
 
+            // Если путь содержит /src/, убираем /src/ из пути
+            if (url.includes('/src/')) {
+              let newUrl = url;
+              // Если путь начинается с ../src/, убираем src/
+              if (newUrl.startsWith('../src/')) {
+                newUrl = newUrl.replace('../src/', '../');
+              }
+              // Если путь начинается с /src/, заменяем на ../
+              else if (newUrl.startsWith('/src/')) {
+                newUrl = newUrl.replace('/src/', '../');
+              }
+              // Если путь содержит /src/ в середине, убираем /src/
+              else {
+                newUrl = newUrl.replace(/\/src\//g, '/');
+                // Если путь не начинается с ../, добавляем
+                if (!newUrl.startsWith('../') && !newUrl.startsWith('./')) {
+                  newUrl = `../${newUrl}`;
+                }
+              }
+              return `${attr}=${quote}${newUrl}${quote}`;
+            }
+
             // Если путь абсолютный (начинается с /), заменяем на ../
             if (url.startsWith('/')) {
               const newUrl = url.replace(/^\//, '../');
