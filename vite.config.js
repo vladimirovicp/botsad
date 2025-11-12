@@ -9,6 +9,7 @@ import htmlTransformBase from './vite/html-transform-base.js';
 import imagemin from './vite/imagemin.js';
 import twig from './vite/twig.js';
 import vituum from './vite/vituum.js';
+import generateFolders from './vite/generate-folders.js';
 
 const plugins = [
   vituum(),
@@ -19,6 +20,7 @@ if (isProd) {
   plugins.push(imagemin());
   plugins.push(htmlmin());
   plugins.push(htmlTransformBase());
+  plugins.push(generateFolders());
 }
 
 export default defineConfig({
