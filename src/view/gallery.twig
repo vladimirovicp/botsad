@@ -1,0 +1,45 @@
+{% set title = 'Фотогалерея' %}
+{% set active_nav = '/gallery' %}
+
+{% extends '@layout/main.twig' %}
+
+{% block content %}
+<div class="container">
+
+  <div class="row gap-xs">
+    <div class="col-xs-12 col-md-8 order-xs-2 order-md-1">
+
+      <div class="section section_offset-bottom">
+        <h1>Фотогалерея</h1>
+      </div>
+
+      <section class="section section_offset border-top">
+        <div class="section__body">
+          <div id="gallery" class="gallery">
+            <a href="/src/img/screen/SumatraPDF_V6urW9ncA1.jpg" class="gallery-item" data-sub-html="<h4>Изображение 1</h4>">
+              <img src="/src/img/screen/SumatraPDF_V6urW9ncA1.jpg" alt="Изображение 1" />
+            </a>
+            <a href="/src/img/no-image.jpg" class="gallery-item" data-sub-html="<h4>Изображение 2</h4>">
+              <img src="/src/img/no-image.jpg" alt="Изображение 2" />
+            </a>
+            <a href="/src/img/logo_4x.png" class="gallery-item" data-sub-html="<h4>Изображение 3</h4>">
+              <img src="/src/img/logo_4x.png" alt="Изображение 3" />
+            </a>
+            <a href="/src/img/screen/SumatraPDF_V6urW9ncA1.jpg" class="gallery-item" data-sub-html="<h4>Изображение 4</h4>">
+              <img src="/src/img/screen/SumatraPDF_V6urW9ncA1.jpg" alt="Изображение 4" />
+            </a>
+            <a href="/src/img/no-image.jpg" class="gallery-item" data-sub-html="<h4>Изображение 5</h4>">
+              <img src="/src/img/no-image.jpg" alt="Изображение 5" />
+            </a>
+            <a href="/src/img/logo_4x.png" class="gallery-item" data-sub-html="<h4>Изображение 6</h4>">
+              <img src="/src/img/logo_4x.png" alt="Изображение 6" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+</div>
+{% endblock %}

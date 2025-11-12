@@ -13,3 +13,4 @@ import '@/js/component/smooth-scroll';
 
 import '@/js/component/header';
 import '@/js/component/section-navigation';
+import '@/js/component/gallery';

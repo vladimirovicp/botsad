@@ -79,6 +79,7 @@
   },
   "dependencies": {
     "@tabler/icons": "^3.34.1",
+    "lightgallery": "^2.9.0",
     "reseter.css": "^2.0.0"
   },
   "overrides": {
