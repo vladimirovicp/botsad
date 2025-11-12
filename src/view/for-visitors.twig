@@ -1,0 +1,67 @@
+{% set title = 'Посетителям' %}
+{% set active_nav = '/for-visitors' %}
+
+{% extends '@layout/main.twig' %}
+
+{% block content %}
+<div class="container">
+
+  <div class="row gap-xs">
+    <div class="col-xs-12 col-md-8 order-xs-2 order-md-1">
+
+      <div class="section section_offset-bottom">
+        <h1>Посетителям</h1>
+      </div>
+
+      <section class="section section_offset border-top">
+        <h2 class="section__title">Карта ботанического сада СГУ</h2>
+        <div class="section__body">
+
+          <img src="/src/img/screen/SumatraPDF_V6urW9ncA1.jpg" alt="" height="480">
+
+        </div>
+      </section>
+
+
+      <section class="section section_offset border-top">
+        <h2 class="section__title">Документ порядок посещения</h2>
+        <div class="section__body">
+        </div>
+      </section>
+
+      <section class="section section_offset border-top">
+        <h2 class="section__title">Время работы Ботсада СГУ для посетителей (без экскурсии)</h2>
+        <div class="section__body">
+          <ul>
+            <li>Ежедневно (кроме понедельника) с 10:00 до 18:00.</li>
+            <li>Вход на территорию для посетителей до 17:00.</li>
+            <li>Понедельник – выходной день.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section_offset border-top">
+        <h2 class="section__title">Стоимость посещения:</h2>
+        <div class="section__body">
+          <ul>
+            <li>Посещение без экскурсии – 50 руб.</li>
+            <li>Дети до 18 лет, студенты, пенсионеры – 30 руб.</li>
+            <li>Дети до 7 лет (обязательно в сопровожденииродителей), участники СВО, многодетные семьи, инвалиды – бесплатно.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section_offset border-top">
+        <h2 class="section__title">как добраться с картой</h2>
+        <div class="section__body">
+        </div>
+      </section>
+    </div>
+
+    <div class="col-xs-12 col-md-3 offset-md-1 align-self-start position-sticky order-xs-1 order-md-2 bg-body">
+      <div class="section__navigation"></div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

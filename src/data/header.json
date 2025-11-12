@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Главная",
+    "link": "/"
+  },
+  {
+    "name": "Новости",
+    "link": "/news"
+  },
+  {
+    "name": "Посетителям",
+    "link": "/for-visitors"
+  },
+  {
+    "name": "Научная работа",
+    "link": "/scientific-work"
+  },
+  {
+    "name": "Фотогалерея",
+    "link": "/components"
+  },
+  {
+    "name": "Контакты",
+    "link": "/contacts"
+  }
+]
