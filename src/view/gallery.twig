@@ -3,6 +3,22 @@
 
 {% extends '@layout/main.twig' %}
 
+
+{% set images = [
+    {
+        'previewPath': '/gallery/2025/_MG_0298.JPG',
+        'imgPath': '/gallery/2025/_MG_0298.JPG',
+        'alt': '',
+    },
+    {
+        'previewPath': '/gallery/2025/preview2.jpg',
+        'imgPath': '/gallery/2025/image2.jpg',
+        'alt': 'Описание изображения 2',
+    },
+] %}
+
+
+
 {% block content %}
 <div class="container">
 
@@ -14,25 +30,29 @@
       </div>
 
       <section class="section section_offset border-top">
+        <h2 class="section__title">2025</h2>
+      </section>
+
+      <section class="section section_offset border-top">
         <div class="section__body">
           <div id="gallery" class="gallery">
-            <a href="/src/img/screen/SumatraPDF_V6urW9ncA1.jpg" class="gallery-item" data-sub-html="<h4>Изображение 1</h4>">
-              <img src="/src/img/screen/SumatraPDF_V6urW9ncA1.jpg" alt="Изображение 1" />
+            <a href="/src/img/gallery/2025/_MG_0298.JPG" class="gallery-item" data-sub-html="<h4>Изображение 1</h4>">
+              <img src="/src/img/gallery/2025/_MG_0298.JPG" alt="Изображение 1" />
             </a>
-            <a href="/src/img/no-image.jpg" class="gallery-item" data-sub-html="<h4>Изображение 2</h4>">
-              <img src="/src/img/no-image.jpg" alt="Изображение 2" />
+            <a href="/src/img/gallery/2025/1_(16).jpg" class="gallery-item" data-sub-html="<h4>Изображение 2</h4>">
+              <img src="/src/img/gallery/2025/1_(16).jpg" alt="Изображение 2" />
             </a>
-            <a href="/src/img/logo_4x.png" class="gallery-item" data-sub-html="<h4>Изображение 3</h4>">
-              <img src="/src/img/logo_4x.png" alt="Изображение 3" />
+            <a href="/src/img/gallery/2025/IMG_0278.JPG" class="gallery-item" data-sub-html="<h4>Изображение 3</h4>">
+              <img src="/src/img/gallery/2025/IMG_0278.JPG" alt="Изображение 3" />
             </a>
-            <a href="/src/img/screen/SumatraPDF_V6urW9ncA1.jpg" class="gallery-item" data-sub-html="<h4>Изображение 4</h4>">
-              <img src="/src/img/screen/SumatraPDF_V6urW9ncA1.jpg" alt="Изображение 4" />
+            <a href="/src/img/gallery/2025/IMG_1439.jpg" class="gallery-item" data-sub-html="<h4>Изображение 4</h4>">
+              <img src="/src/img/gallery/2025/IMG_1439.jpg" alt="Изображение 4" />
             </a>
-            <a href="/src/img/no-image.jpg" class="gallery-item" data-sub-html="<h4>Изображение 5</h4>">
-              <img src="/src/img/no-image.jpg" alt="Изображение 5" />
+            <a href="/src/img/gallery/2025/IMG_1894.jpg" class="gallery-item" data-sub-html="<h4>Изображение 5</h4>">
+              <img src="/src/img/gallery/2025/IMG_1894.jpg" alt="Изображение 5" />
             </a>
-            <a href="/src/img/logo_4x.png" class="gallery-item" data-sub-html="<h4>Изображение 6</h4>">
-              <img src="/src/img/logo_4x.png" alt="Изображение 6" />
+            <a href="/src/img/gallery/2025/IMG_2061.jpg" class="gallery-item" data-sub-html="<h4>Изображение 6</h4>">
+              <img src="/src/img/gallery/2025/IMG_2061.jpg" alt="Изображение 6" />
             </a>
           </div>
         </div>
